@@ -1,5 +1,7 @@
 'use strict';
 
+// TODO: As you do your work (in vehicle-class.js and vehicle-factory.js), other than changing the require() lines in both the index.js and the test files, both the index.js and the tests should work unchanged. Do not change the actual test or index code!
+
 const VehicleConstructor = require('../vehicle-constructor.js');
 
 let types = ['Constructor'];
