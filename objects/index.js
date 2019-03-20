@@ -5,7 +5,9 @@ const VehicleClass = require('./vehicle-class.js');
 const VehicleFactory = require('./vehicle-factory.js');
 
 const FlyingVehicleConstructor = require('./flyingvehicle-constructor.js');
+const FlyingVehicleClass = require('./flyingvehicle-class.js');
 const FlyingVehicleFactory = require('./flyingvehicle-factory.js');
+
 
 
 
@@ -42,10 +44,17 @@ const blackhawk = new FlyingVehicleConstructor.Helicopter('Blackhawk');
 console.log(blackhawk.name, blackhawk.takeOff(), blackhawk.crash(), blackhawk.decapitate());
 
 // // Implement a airplane and helicopter using a Class
-const gSixPrivate = new FlyingVehicleConstructor.Airplane('Gulfstream G650');
+const turboProp = new FlyingVehicleClass.Airplane('Turboprop');
+console.log(turboProp.name, turboProp.takeOff(), turboProp.crash(), turboProp.barrelRoll(), turboProp.surelyYouCantBeSerious());
+
+const chinook = new FlyingVehicleClass.Helicopter('CH-47 Chinook');
+console.log(chinook.name, chinook.takeOff(), chinook.crash(), chinook.decapitate());
+
+// // Implement a airplane and helicopter using a Factory
+const gSixPrivate = new FlyingVehicleFactory.AirplaneFactory('Gulfstream G650');
 console.log(gSixPrivate.name, gSixPrivate.takeOff(), gSixPrivate.crash(), gSixPrivate.barrelRoll(), gSixPrivate.surelyYouCantBeSerious());
 
-const apache = new FlyingVehicleConstructor.Helicopter('Boeing AH-64 Apache');
+const apache = new FlyingVehicleFactory.HelicopterFactory('Boeing AH-64 Apache');
 console.log(apache.name, apache.takeOff(), apache.crash(), apache.decapitate());
 
 // // Implement a airplane and helicopter using a Factory
