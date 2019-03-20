@@ -32,4 +32,12 @@ describe('List Data Structure', () => {
     expect(stuff.data[1]).toEqual('b');
   });
 
+  it('shifts items to the beginning of the data set', () => {
+    let stuff = new List();
+    stuff.shift('a');
+    stuff.shift('b');
+    expect(stuff.length).toEqual(2);
+    expect(stuff.data[1]).toEqual('a');
+  });
+
 });
