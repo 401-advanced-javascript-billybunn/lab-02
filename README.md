@@ -8,16 +8,59 @@
 ### Links and Resources
 * [repo](http://xyz.com)
 * [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [heroku](http://xyz.com)
 
 #### Documentation
-* [swagger](http://xyz.com) (API assignments only)
 * [jsdoc](http://xyz.com) (All assignments)
 
-### Modules
-#### `modulename.js`
+### Modules - `objects/`
+_Vehicles_
+#### `vehicle-constructor.js`
 ##### Exported Values and Methods
+Uses constructors to build Car and Motorcycle objects. These constructors inherit properties/methods from a Vehicle constructor using prototype inheritance.
+
+#### `vehicle-class.js`
+##### Exported Values and Methods
+Uses classes to build Car and Motorcycle objects. These classes inherit properties/methods from a Vehicle parent class. 
+
+#### `vehicle-factory.js`
+##### Exported Values and Methods
+Uses object factories to build Car and Motorcycle objects. These factories "inherit" properties/methods from a Vehicle function.
+
+
+_FlyingVehicles_
+#### `flyingvehicle-constructor.js`
+##### Exported Values and Methods
+Uses constructors to build Airplane and Helicopter objects. These constructors inherit properties/methods from a FlyingVehicle constructor using prototype inheritance.
+
+#### `flyingvehicle-class.js`
+##### Exported Values and Methods
+Uses classes to build Airplane and Helicopter objects. These classes inherit properties/methods from a FlyingVehicle parent class. 
+
+#### `flyingvehicle-factory.js`
+##### Exported Values and Methods
+Uses object factories to build Airplane and Helicopter objects. These factories "inherit" properties/methods from a FlyingVehicle function.
+
+
+_SeaCreatures_
+#### `seacreature-constructor.js`
+##### Exported Values and Methods
+Uses constructors to build Fish and Lobster objects. These constructors inherit properties/methods from a SeaCreature constructor using prototype inheritance.
+
+#### `seacreature-class.js`
+##### Exported Values and Methods
+Uses classes to build Fish and Lobster objects. These classes inherit properties/methods from a SeaCreature parent class.
+
+#### `seacreature-factory.js`
+##### Exported Values and Methods
+Uses object factories to build Fish and Lobster objects. These factories "inherit" properties/methods from a SeaCreature function.
+
+### Modules - `list/`
+
+
+
+
+
 
 ###### `foo(thing) -> string`
 Usage Notes or examples
