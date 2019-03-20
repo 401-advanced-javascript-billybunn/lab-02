@@ -24,7 +24,7 @@ List.prototype.pop = function () {
   return returnValue;
 };
 
-List.prototype.shift = function (item) {
+List.prototype.unshift = function (item) {
   for (let i = this.length; i > 0; i--) {
     this.data[i] = this.data[i - 1];
   }
@@ -32,14 +32,30 @@ List.prototype.shift = function (item) {
   this.data[0] = item;
 };
 
-let someList = new List();
+List.prototype.shift = function (item) {
+  let returnValue = this.data[0]; 
+  this.length--;
+
+  for (let i = 0; i < this.length; i++) {
+    this.data[i] = this.data[i+1]; //?
+  }
+
+  delete this.data[this.length];
+  return returnValue;
+};
+
+// let someList = new List();
 // someList.push('a');
 // someList.push('b');
-someList.shift('c');
-someList.shift('d');
+// someList.unshift('a');
+// someList.unshift('b');
+// someList.unshift('c');
+// someList.unshift('d');
 
+// someList.shift();
+// someList.unshift();
 
-someList; //?
+// someList; 
 
 
 module.exports = List;
