@@ -3,24 +3,27 @@
 // TODO: As you do your work (in vehicle-class.js and vehicle-factory.js), other than changing the require() lines in both the index.js and the test files, both the index.js and the tests should work unchanged. Do not change the actual test or index code!
 
 const VehicleConstructor = require('../vehicle-constructor.js');
+const VehicleClass = require('../vehicle-class.js');
 
-let types = ['Constructor'];
+let types = ['Constructor', 'Class'];
 
 describe('Vehicles', () => {
 
   describe('Car', () => {
-    
+
     function getCar(type) {
-      switch(type) {
+      switch (type) {
         case 'Constructor':
           return new VehicleConstructor.Car('foo');
+        case 'Class':
+          return new VehicleClass.Car('foo');
         default:
           return {};
       }
     }
-    
-    types.forEach( type => {
-      
+
+    types.forEach(type => {
+
       let car = getCar(type);
 
       it(`${type} (Car) has 4 wheels`, () => {
@@ -37,7 +40,7 @@ describe('Vehicles', () => {
 
       it(`${type} (Car) cannot do a wheelie`, () => {
         expect(car.wheelie).toBeUndefined();
-      }); 
+      });
     });
 
   });
@@ -45,15 +48,17 @@ describe('Vehicles', () => {
   describe(`Motorcycle`, () => {
 
     function getMotorcycle(type) {
-      switch(type) {
+      switch (type) {
         case 'Constructor':
           return new VehicleConstructor.Motorcycle('foo');
+        case 'Class':
+          return new VehicleClass.Motorcycle('foo');
         default:
           return {};
       }
     }
 
-    types.forEach( type => {
+    types.forEach(type => {
 
       let motorcycle = getMotorcycle(type);
 
@@ -72,7 +77,7 @@ describe('Vehicles', () => {
       it(`${type} (Motorcycle) cannot do a wheelie`, () => {
         expect(motorcycle.wheelie()).toBeTruthy();
       });
-      
+
     });
 
   });
