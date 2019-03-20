@@ -1,14 +1,16 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB 02
 =================================================
 
+#### Notes for grading:
+I finished the objects/ folder but not the list/ folder. I've got a few methods working in the `list` constructor, but not all of them. Need to add some more documentation (and JSdocs) below as well.
+
 ## LAB: Class 02
 
 ### Author: Billy Bunn
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [heroku](http://xyz.com)
+* [repo](https://github.com/401-advanced-javascript-billybunn/lab-02/)
+* [travis](https://www.travis-ci.com/401-advanced-javascript-billybunn/lab-02)
 
 #### Documentation
 * [jsdoc](http://xyz.com) (All assignments)
@@ -56,11 +58,7 @@ Uses classes to build Fish and Lobster objects. These classes inherit properties
 Uses object factories to build Fish and Lobster objects. These factories "inherit" properties/methods from a SeaCreature function.
 
 ### Modules - `list/`
-
-
-
-
-
+_add modules for list folder here_
 
 ###### `foo(thing) -> string`
 Usage Notes or examples
@@ -70,20 +68,16 @@ Usage Notes or examples
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `npm i` - install dependencies
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
-  
+* `node objects/index.js`
+* `node list/index.js`
+
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* `npm test` to run tests
+* **Assertions**: _to do_
+* **Assertions to be made**: _to do_
 
 #### UML
-Link to an image of the UML for your application and response to events
+_UML image goes here_
