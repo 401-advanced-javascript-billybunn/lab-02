@@ -2,8 +2,7 @@
 
 // TODO: Implement both Car and Motorcycle using a Javascript Factory Function (in the vehicle-factory.js file)
 
-const CarFactory = (name) => ({
-  name: name,
+const Vehicle = () => ({
   drive: () => {
     return 'Moving Forward';
   },
@@ -12,8 +11,29 @@ const CarFactory = (name) => ({
   },
 });
 
-// module.exports = {CarFactory, MotorcycleFactory};
+const wheelie = () => ({
+  wheelie: () => {
+    return 'Wheee!';
+  },
+});
 
-const carViaFactory = CarFactory('hey');
+function CarFactory(name) {
+  let car = Object.assign(
+    {name},
+    {wheels: 4},
+    Vehicle()
+  );
+  return Object.freeze(car);
+}
 
-console.log(carViaFactory, carViaFactory.drive(), carViaFactory.stop());
+function MotorcycleFactory(name) {
+  let motorcycle = Object.assign(
+    {name},
+    {wheels: 2},
+    wheelie(),
+    Vehicle()
+  );
+  return Object.freeze(motorcycle);
+}
+
+module.exports = {CarFactory, MotorcycleFactory};

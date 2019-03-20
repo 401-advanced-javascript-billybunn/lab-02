@@ -19,8 +19,8 @@ const yamaha = new VehicleClass.Motorcycle('Yamaha');
 console.log(yamaha.name, yamaha.wheelie(), yamaha.stop());
 
 // Implement a car and motorcycle using a Factory
-const toyota = new VehicleFactory.Car('Toyota Camry');
+const toyota = new VehicleFactory.CarFactory('Toyota Camry');
 console.log(toyota.name, toyota.drive(), toyota.stop());
 
-const ducati = new VehicleFactory.Motorcycle('Ducati');
+const ducati = new VehicleFactory.MotorcycleFactory('Ducati');
 console.log(ducati.name, ducati.wheelie(), ducati.stop());
