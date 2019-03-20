@@ -1,7 +1,5 @@
 'use strict';
 
-// TODO: Implement both Car and Motorcycle using a Javascript Class (in the vehicle-class.js file)
-
 class FlyingVehicle {
   constructor(name) {
     this.name = name;
@@ -31,8 +29,6 @@ class Airplane extends FlyingVehicle {
     return 'I am serious. And don\'t call me Shirley';
   }
 }
-
-
 
 // Helicopters are FlyingVehicles
 class Helicopter extends FlyingVehicle {

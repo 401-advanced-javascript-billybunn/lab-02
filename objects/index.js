@@ -8,11 +8,9 @@ const FlyingVehicleConstructor = require('./flyingvehicle-constructor.js');
 const FlyingVehicleClass = require('./flyingvehicle-class.js');
 const FlyingVehicleFactory = require('./flyingvehicle-factory.js');
 
-// const SeaCreatureConstructor = require('./seacreature-constructor.js');
-// const SeaCreatureClass = require('./seacreature-class.js');
 const SeaCreatureFactory = require('./seacreature-factory.js');
-
-
+const SeaCreatureClass = require('./seacreature-class.js');
+const SeaCreatureConstructor = require('./seacreature-constructor.js');
 
 
 // Vehicles
@@ -71,16 +69,16 @@ console.log(sockeye.name, sockeye.swim());
 const maine = new SeaCreatureFactory.LobsterFactory('Maine Lobster');
 console.log(maine.name, maine.swim(), maine.claw());
 
-// // Implment a fish and a lobster using a Class
-// const trout = new SeaCreatureClass.Fish('Rainbow Trout');
-// console.log(trout.name, trout.swim());
+// Implment a fish and a lobster using a Class
+const trout = new SeaCreatureClass.Fish('Rainbow Trout');
+console.log(trout.name, trout.swim());
 
-// const rock = new SeaCreatureClass.Lobster('Rock Lobster');
-// console.log(rock.name, rock.swim(), rock.claw());
+const rock = new SeaCreatureClass.Lobster('Rock Lobster');
+console.log(rock.name, rock.swim(), rock.claw());
 
-// // Implment a fish and a lobster using a Constructor
-// const shark = new SeaCreatureConstructor.Fish('Great White Shark');
-// console.log(shark.name, shark.swim());
+// Implment a fish and a lobster using a Constructor
+const shark = new SeaCreatureConstructor.Fish('Great White Shark');
+console.log(shark.name, shark.swim());
 
-// const california = new SeaCreatureConstructor.Lobster('California Spiny Lobster');
-// console.log(california.name, california.swim(), california.claw());
+const california = new SeaCreatureConstructor.Lobster('California Spiny Lobster');
+console.log(california.name, california.swim(), california.claw());
