@@ -40,11 +40,3 @@ Helicopter.prototype.decapitate = () => {
 };
 
 module.exports = {Airplane, Helicopter};
-
-// let heli = new Airplane('hey'); //?
-
-// heli.surelyYouCantBeSerious(); //?
-// heli.canFly; //?
-// heli.name; //?
-// heli.barrelRoll(); //?
-// heli.crash(); //?
