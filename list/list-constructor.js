@@ -24,4 +24,11 @@ List.prototype.pop = function() {
   return returnValue;
 };
 
+// let someList = new List();
+// someList.push('a');
+// someList.push('b');
+
+// someList; //?
+
+
 module.exports = List;
